@@ -45,6 +45,7 @@ kotlin {
         androidMain.dependencies {
             implementation(compose.preview)
             implementation(libs.androidx.activity.compose)
+            implementation(libs.paho)
         }
         commonMain.dependencies {
             implementation(compose.runtime)
@@ -59,6 +60,7 @@ kotlin {
         desktopMain.dependencies {
             implementation(compose.desktop.currentOs)
             implementation(libs.kotlinx.coroutines.swing)
+            implementation(libs.paho)
         }
     }
 }
